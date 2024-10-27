@@ -1,0 +1,13 @@
+{% extends 'transactions/layout.html' %}
+
+{% block title %}Регистрация{% endblock %}
+{% block content %}
+    <div class="form-container">
+        <h1 class="form-title">Регистрация</h1>
+        <form method="post" class="signup-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn-submit" type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+{% endblock %} 

@@ -1,0 +1,21 @@
+{% extends 'transactions/layout.html' %}
+
+{% block title %}Категории{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>Категории</h1>
+        {% if categories %}
+            {% for element in categories %}
+                <div class="alert alert-warning">
+                    <h3>{{ element.name }}</h3>
+                    <a href="{% url 'details_view' element.id %}" class="btn btn-warning">Читать больше</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Вы еще не добавили категории</p>
+        {% endif %}
+
+        <p>Здесь вы можете добавить категорию трат</p>
+        <button class="btn btn-warning">Добавить категорию</button>
+    </div>
+{% endblock %} 

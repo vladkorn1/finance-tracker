@@ -1,0 +1,133 @@
+body {
+    background: #2c2c2c;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 40px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 25px;
+    margin-left: 5px;
+    font-weight: solid;
+    position: relative;
+    top: 5px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside ul {list-style: none}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05)
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 400px; margin: 50px auto;}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    font-size: 30px;
+}
+
+/* Поля формы */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%; /* Поля занимают всю ширину контейнера */
+    padding: 10px;
+    margin-bottom: 15px; /* Отступы между полями */
+    border: 1px solid #ccc; /* Светлая рамка */
+    border-radius: 5px; /* Скругление углов полей */
+    font-size: 16px;
+    box-sizing: border-box; /* Учитываем отступы и рамки в общей ширине */
+}
+
+/* Поля формы при фокусе */
+.signup-form input[type="text"]:focus,
+.signup-form input[type="email"]:focus,
+.signup-form input[type="password"]:focus {
+    border-color: #007bff; /* Подсвечиваем рамку при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Лёгкая тень для акцента */
+}
+
+/* Кнопка отправки формы */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Цвет кнопки */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Эффект наведения на кнопку */
+.btn-submit:hover {
+    background-color: #218838; /* Более тёмный оттенок зелёного при наведении */
+}
+
+/* Стилизуем ошибки полей */
+.signup-form .errorlist {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 14px;
+}

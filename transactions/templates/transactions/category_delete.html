@@ -1,0 +1,12 @@
+{% extends 'transactions/layout.html' %}
+
+{% block title %}{{category.name}}{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>{{ category.name }}</h1>
+        <form method="post">
+            {% csrf_token%}
+            <button class="btn btn-success" type="submit">Удалить категорию</button>
+        </form>
+    </div>
+{% endblock %} 

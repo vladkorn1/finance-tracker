@@ -1,0 +1,23 @@
+{% extends 'transactions/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Lorem ipsum</p>
+        <button class="btn btn-warning">На страницу про нас</button>
+        {% for element in values%}
+            {% if element == 'hello' %}
+                {% filter upper %}
+                    <p>{{ element }}</p>
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+
+        {{ obj.age }}
+
+        {% for element in obj%}
+            <p>{{ element }}</p>
+        {% endfor %}
+    </div>
+{% endblock %} 
